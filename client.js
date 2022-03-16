@@ -12,7 +12,6 @@ const connect = function () {
     // port: "50541"
   });
 
-  // interpret incoming data as text
   conn.setEncoding("utf8");
   
   conn.on('connect', () => {
@@ -20,16 +19,18 @@ const connect = function () {
   });
   
   conn.on('connect', () => {
-    conn.write("Name: IAA");
-
-    // setInterval(function() {
-    //   conn.write("Move: up");
-    // }, 100);
-
-
+    conn.write("Name: IJ");
   });
+
+
+
+
   return conn;
+
 };
+
+
+
 
 
 module.exports = {
