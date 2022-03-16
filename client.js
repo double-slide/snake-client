@@ -4,17 +4,12 @@ const net = require("net");
 const connect = function () {
   const conn = net.createConnection({
     
-    // ONLY UNCOMMENT ONE CONNECTION BELOW
-
     // LHL game server
     host: "165.227.47.243",
     port: "50541"
-
     // // localhost
     // host: "192.168.1.72",
     // port: "50541"
-
-
   });
 
   // interpret incoming data as text
@@ -33,13 +28,7 @@ const connect = function () {
 
 
   });
-
-  // conn.on('connect', () => {
-  //   conn.write("Name: IAA");
-  // });
-  
   return conn;
-
 };
 
 
